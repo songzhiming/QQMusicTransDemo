@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondViewController">
+            <connections>
+                <outlet property="iconImageView" destination="3Ew-iI-8w2" id="LDL-Ih-Z1U"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uxD-q7-yJ3">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="24t-YI-EXd"/>
+                        <constraint firstAttribute="width" constant="46" id="LOQ-R9-yP0"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="24t-YI-EXd"/>
+                            <exclude reference="LOQ-R9-yP0"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="24t-YI-EXd"/>
+                            <include reference="LOQ-R9-yP0"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="dismiss:" destination="-1" eventType="touchUpInside" id="3OQ-WY-2Zf"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mojiezuo" translatesAutoresizingMaskIntoConstraints="NO" id="3Ew-iI-8w2">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="1ev-NS-vRN">
+                            <variation key="heightClass=regular-widthClass=compact" constant="200"/>
+                        </constraint>
+                        <constraint firstAttribute="height" constant="128" id="WPV-OC-1t2">
+                            <variation key="heightClass=regular-widthClass=compact" constant="200"/>
+                        </constraint>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="1ev-NS-vRN"/>
+                            <exclude reference="WPV-OC-1t2"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="1ev-NS-vRN"/>
+                            <include reference="WPV-OC-1t2"/>
+                        </mask>
+                    </variation>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="3Ew-iI-8w2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="SaW-kW-rGx"/>
+                <constraint firstItem="uxD-q7-yJ3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jZb-Vg-g3q"/>
+                <constraint firstItem="uxD-q7-yJ3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="85" id="m3P-al-j6y"/>
+                <constraint firstItem="3Ew-iI-8w2" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="wGV-zb-Rcn"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="uxD-q7-yJ3"/>
+                    <exclude reference="3Ew-iI-8w2"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="jZb-Vg-g3q"/>
+                    <exclude reference="m3P-al-j6y"/>
+                    <exclude reference="SaW-kW-rGx"/>
+                    <exclude reference="wGV-zb-Rcn"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="uxD-q7-yJ3"/>
+                    <include reference="3Ew-iI-8w2"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="jZb-Vg-g3q"/>
+                    <include reference="m3P-al-j6y"/>
+                    <include reference="SaW-kW-rGx"/>
+                    <include reference="wGV-zb-Rcn"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="mojiezuo" width="1024" height="768"/>
+    </resources>
+</document>
